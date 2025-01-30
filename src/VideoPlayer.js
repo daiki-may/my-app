@@ -2,27 +2,27 @@ import { useState } from "react";
 
 const assets = {
   grape: {
-    image: `${process.env.PUBLIC_URL}/images/grape.png`,  // ローカル画像
-    video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"  // Google Drive 動画
+    image: "/my-app/public/images/grape.png", 
+    video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"  
   },
   kiwi: {
-    image: `${process.env.PUBLIC_URL}/images/kiwi.png`,
+    image: "/my-app/public/images/kiwi.png",
     video: "https://drive.google.com/uc?id=1mR3pKG6FEhS2Xyw5tkz0Po0a_-WpngeD"
   },
   melon: {
-    image: `${process.env.PUBLIC_URL}/images/melon.png`,
+    image: "/my-app/public/images/melon.png",
     video: "https://drive.google.com/uc?id=1WtVy6Il4qa2lOFKPDt4BxpC7yKkfSBgT"
   },
   pine: {
-    image: `${process.env.PUBLIC_URL}/images/pine.png`,  // ローカル画像
-    video: "https://drive.google.com/uc?id=1wRhLTMJH2gzKt6Qg7coFkUsybQqUDzB2"  // Google Drive 動画
+    image: "/my-app/public/images/pine.png", 
+    video: "https://drive.google.com/uc?id=1wRhLTMJH2gzKt6Qg7coFkUsybQqUDzB2"  
   },
   raspberry: {
-    image: `${process.env.PUBLIC_URL}/images/raspberry.png`,
+    image: "/my-app/public/images/raspberry.png",
     video: "https://drive.google.com/uc?id=1rQ9xQqVQWRmWxjbt729QRqn_SYb4HURI"
   },
   strawberry: {
-    image: `${process.env.PUBLIC_URL}/images/strawberry.png`,
+    image: "/my-app/public/images/strawberry.png",
     video: "https://drive.google.com/uc?id=1b9Fy0Q7bIA8J2wrOVibutdKoSYj4aQBI"
   }
 };
@@ -61,4 +61,3 @@ export default function VideoPlayer() {
     </div>
   );
 }
-
