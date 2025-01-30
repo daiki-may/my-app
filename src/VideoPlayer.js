@@ -2,27 +2,27 @@ import { useState } from "react";
 
 const assets = {
   grape: {
-    image: "./images/grape.png", 
+    image: `${process.env.PUBLIC_URL}/images/grape.png`, 
     video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"  
   },
   kiwi: {
-    image: "./images/kiwi.png",
+    image: `${process.env.PUBLIC_URL}/images/kiwi.png`,
     video: "https://drive.google.com/uc?id=1mR3pKG6FEhS2Xyw5tkz0Po0a_-WpngeD"
   },
   melon: {
-    image: "./images/melon.png",
+    image: `${process.env.PUBLIC_URL}/images/melon.png`,
     video: "https://drive.google.com/uc?id=1WtVy6Il4qa2lOFKPDt4BxpC7yKkfSBgT"
   },
   pine: {
-    image: "./images/pine.png", 
+    image: `${process.env.PUBLIC_URL}/images/pine.png`, 
     video: "https://drive.google.com/uc?id=1wRhLTMJH2gzKt6Qg7coFkUsybQqUDzB2"  
   },
   raspberry: {
-    image: "./images/raspberry.png",
+    image: `${process.env.PUBLIC_URL}/images/raspberry.png`,
     video: "https://drive.google.com/uc?id=1rQ9xQqVQWRmWxjbt729QRqn_SYb4HURI"
   },
   strawberry: {
-    image: "./images/strawberry.png",
+    image: `${process.env.PUBLIC_URL}/images/strawberry.png`,
     video: "https://drive.google.com/uc?id=1b9Fy0Q7bIA8J2wrOVibutdKoSYj4aQBI"
   }
 };
