@@ -3,7 +3,8 @@ import { useState } from "react";
 const assets = {
   grape: {
     image: `${process.env.PUBLIC_URL}/images/grape.png`, 
-    video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"
+    video: "${process.env.PUBLIC_URL}/videos/grape2.mp4"
+    // video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"
   },
   kiwi: {
     image: `${process.env.PUBLIC_URL}/images/kiwi.png`,
