@@ -2,27 +2,27 @@ import { useState } from "react";
 
 const assets = {
   grape: {
-    image: "/my-app/public/images/grape.png", 
+    image: "./public/images/grape.png", 
     video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"  
   },
   kiwi: {
-    image: "/my-app/public/images/kiwi.png",
+    image: "./public/images/kiwi.png",
     video: "https://drive.google.com/uc?id=1mR3pKG6FEhS2Xyw5tkz0Po0a_-WpngeD"
   },
   melon: {
-    image: "/my-app/public/images/melon.png",
+    image: "./public/images/melon.png",
     video: "https://drive.google.com/uc?id=1WtVy6Il4qa2lOFKPDt4BxpC7yKkfSBgT"
   },
   pine: {
-    image: "/my-app/public/images/pine.png", 
+    image: "./public/images/pine.png", 
     video: "https://drive.google.com/uc?id=1wRhLTMJH2gzKt6Qg7coFkUsybQqUDzB2"  
   },
   raspberry: {
-    image: "/my-app/public/images/raspberry.png",
+    image: "./public/images/raspberry.png",
     video: "https://drive.google.com/uc?id=1rQ9xQqVQWRmWxjbt729QRqn_SYb4HURI"
   },
   strawberry: {
-    image: "/my-app/public/images/strawberry.png",
+    image: "./public/images/strawberry.png",
     video: "https://drive.google.com/uc?id=1b9Fy0Q7bIA8J2wrOVibutdKoSYj4aQBI"
   }
 };
