@@ -3,7 +3,7 @@ import { useState } from "react";
 const assets = {
   grape: {
     image: `${process.env.PUBLIC_URL}/images/grape.png`, 
-    video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"  
+    video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"
   },
   kiwi: {
     image: `${process.env.PUBLIC_URL}/images/kiwi.png`,
@@ -36,7 +36,7 @@ export default function VideoPlayer() {
         {/* 動画表示エリア */}
         <div className="w-full h-64 bg-black flex items-center justify-center rounded-lg shadow-lg overflow-hidden">
           {selectedVideo ? (
-            <video key={selectedVideo} controls autoPlay className="w-full h-full object-contain">
+            <video key={selectedVideo} controls autoPlay playsInline className="w-full h-full object-contain">
               <source src={selectedVideo} type="video/mp4" />
             </video>
           ) : (
