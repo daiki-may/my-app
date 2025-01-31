@@ -3,12 +3,11 @@ import { useState } from "react";
 const assets = {
   grape: {
     image: `${process.env.PUBLIC_URL}/images/grape.png`, 
-    video: `${process.env.PUBLIC_URL}/videos/grape2.mp4`
-    // video: "https://drive.google.com/uc?id=1gw6a2VyGLkBiEXAkFVRfqVT_GMhAwBer"
+    video: "https://www.youtube.com/embed/OgP2D-uYY68"
   },
   kiwi: {
     image: `${process.env.PUBLIC_URL}/images/kiwi.png`,
-    video: "https://drive.google.com/uc?id=1mR3pKG6FEhS2Xyw5tkz0Po0a_-WpngeD"
+    video: "https://www.youtube.com/embed/Fy1M3untphg"
   },
   melon: {
     image: `${process.env.PUBLIC_URL}/images/melon.png`,
