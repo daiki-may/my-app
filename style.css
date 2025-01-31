@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    text-align: center;
+    cursor: url('./images/fork.png'), auto;
+}
+
+#front-image {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+}
+
+#plate-image {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+#fruit-container {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.fruit {
+    width: 100px;
+    cursor: pointer;
+}
+
+#video-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#youtube-video {
+    width: 800px;
+    height: 450px;
+}
