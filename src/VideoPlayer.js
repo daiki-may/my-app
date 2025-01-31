@@ -1,29 +1,30 @@
 import { useState } from "react";
+import YouTubeEmbed from "./YouTubeEmbed";
 
 const assets = {
   grape: {
-    image: `${process.env.PUBLIC_URL}/images/grape.png`, 
-    video: "https://www.youtube.com/embed/OgP2D-uYY68"
+    image: `${process.env.PUBLIC_URL}/images/grape.png`,
+    video: "OgP2D-uYY68"
   },
   kiwi: {
     image: `${process.env.PUBLIC_URL}/images/kiwi.png`,
-    video: "https://www.youtube.com/embed/Fy1M3untphg"
+    video: "Fy1M3untphg"
   },
   melon: {
     image: `${process.env.PUBLIC_URL}/images/melon.png`,
-    video: "https://drive.google.com/uc?id=1WtVy6Il4qa2lOFKPDt4BxpC7yKkfSBgT"
+    video: "n-gciIGOqE4"
   },
   pine: {
-    image: `${process.env.PUBLIC_URL}/images/pine.png`, 
-    video: "https://drive.google.com/uc?id=1wRhLTMJH2gzKt6Qg7coFkUsybQqUDzB2"  
+    image: `${process.env.PUBLIC_URL}/images/pine.png`,
+    video: "TYRt88u47Do"
   },
   raspberry: {
     image: `${process.env.PUBLIC_URL}/images/raspberry.png`,
-    video: "https://drive.google.com/uc?id=1rQ9xQqVQWRmWxjbt729QRqn_SYb4HURI"
+    video: "6dsfI6lHnSU"
   },
   strawberry: {
     image: `${process.env.PUBLIC_URL}/images/strawberry.png`,
-    video: "https://drive.google.com/uc?id=1b9Fy0Q7bIA8J2wrOVibutdKoSYj4aQBI"
+    video: "HmjLK6ejid8"
   }
 };
 
@@ -36,9 +37,7 @@ export default function VideoPlayer() {
         {/* 動画表示エリア */}
         <div className="w-full h-64 bg-black flex items-center justify-center rounded-lg shadow-lg overflow-hidden">
           {selectedVideo ? (
-            <video key={selectedVideo} controls autoPlay playsInline className="w-full h-full object-contain">
-              <source src={selectedVideo} type="video/mp4" />
-            </video>
+            <YouTubeEmbed embedId={selectedVideo} />
           ) : (
             <p className="text-white text-lg">Select a fruit below to see the avatar action!</p>
           )}
