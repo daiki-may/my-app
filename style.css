@@ -1,9 +1,11 @@
+/* 🏁 全体のスタイル */
 body {
     background-color: black;
     text-align: center;
-    cursor: url('./images/fork.png'), auto;
+    cursor: url('./images/fork.png') 100 100, auto;  /* 50 50 はカーソルの基準点 */
 }
 
+/* 🖼 Front Image */
 #front-image {
     position: absolute;
     top: 10%;
@@ -12,6 +14,7 @@ body {
     width: 600px;
 }
 
+/* 🍽 Plate Image */
 #plate-image {
     position: absolute;
     bottom: 10%;
@@ -20,6 +23,7 @@ body {
     width: 800px;
 }
 
+/* 🍏 フルーツコンテナ */
 #fruit-container {
     position: absolute;
     bottom: 15%;
@@ -29,11 +33,13 @@ body {
     gap: 20px;
 }
 
+/* 🍇 フルーツ画像のサイズ & カーソルをフォークに */
 .fruit {
     width: 100px;
-    cursor: pointer;
+    cursor: inherit !important;  /* カーソルをフォークのままに */
 }
 
+/* 🎬 YouTube Video Container */
 #video-container {
     position: absolute;
     top: 30%;
@@ -42,7 +48,13 @@ body {
     display: none;
 }
 
+/* 📺 YouTube Video サイズ */
 #youtube-video {
     width: 800px;
     height: 450px;
+}
+
+/* 🏆 追加: ボタンの上でもフォークカーソルを維持 */
+button {
+    cursor: inherit !important;
 }
