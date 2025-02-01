@@ -2,7 +2,7 @@
 body {
     background-color: black;
     text-align: center;
-    cursor: url('./images/fork.png') 100 100, auto;  /* フォークカーソル */
+    cursor: url('./images/fork.png') 0 0, auto;  /* フォークカーソル */
 }
 
 
@@ -31,42 +31,64 @@ body {
     height: 100vh;
 }
 
-/* 🍇 フルーツ画像（位置を自由に設定） */
+/* 🍇 フルーツ画像（クリック可能エリアを視覚化） */
 .fruit {
-    width: 80px;
-    cursor: inherit !important;
+    width: auto; /* サイズは後で調整しやすいように */
+/*    cursor: pointer;*/
+    cursor: inherit !important; /* フォークカーソルを維持 */
     position: absolute; /* 親要素の基準で自由に配置 */
+    border: 2px solid transparent; /* クリック可能エリアを枠で表示 */
+    transition: border 0.3s ease, transform 0.2s ease; /* なめらかに変化 */
+}
+
+
+/* 🟡 フルーツのクリック範囲をホバーで可視化 */
+.fruit:hover {
+    border: 2px solid rgba(255, 255, 255, 0.8); /* 枠の色を変更（白） */
+    transform: scale(0.95); /* ほんの少し拡大してクリックしやすく */
 }
 
 /* 🍎 各フルーツの個別位置設定 */
 #grape {
-    left: 41%;
-    bottom: 7%; /* → これで画面の一番下に移動するはず */
+    left: 40%;
+    bottom: 8%;
+    width: 97px;
+    height: auto;
 }
 
 #kiwi {
-    left: 54%;
-    bottom: 11%; /* → 少し上に */
+    left: 50%;
+    bottom: 15%;
+    width: 110px;
+    height: auto;
 }
 
 #melon {
-    left: 46%;
-    bottom: 5%;
+    left: 43.5%;
+    bottom: 14%;
+    width: 100px;
+    height: auto;
 }
 
 #pine {
-    left: 45%;
-    bottom: 13%;
+    left: 50%;
+    bottom: 5%;
+    width: 115px;
+    height: auto;
 }
 
 #raspberry {
-    left: 51%;
-    bottom: 5%;
+    left: 53.5%;
+    bottom: 9%;
+    width: 110px;
+    height: auto;
 }
 
 #strawberry {
-    left: 49%;
-    bottom: 13%;
+    left: 45%;
+    bottom: 5%;
+    width: 85px;
+    height: auto;
 }
 
 #desk-image {
@@ -100,4 +122,43 @@ body {
 /* 🏆 追加: ボタンの上でもフォークカーソルを維持 */
 button {
     cursor: inherit !important;
+}
+
+
+
+#experiment-buttons {
+    position: fixed;
+    bottom: 30px;  /* 画面下からの距離 */
+    right: 140px;   /* 画面右からの距離 */
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    gap: 20px;
+}
+
+
+.experiment-btn {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.experiment-btn:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.1);
+}
+
+.experiment-btn:focus {
+    outline: none;
+}
+
+.fruit-wrapper {
+    position: relative;
+    display: inline-block;
 }

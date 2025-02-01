@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Video Player</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,12 +21,44 @@
 
     <!-- 🍓 フルーツ画像 -->
     <div id="fruit-container">
-        <img id="grape" class="fruit" src="images/grape.png" data-video="OgP2D-uYY68" alt="Grape">
-        <img id="kiwi" class="fruit" src="images/kiwi.png" data-video="Fy1M3untphg" alt="Kiwi">
-        <img id="melon" class="fruit" src="images/melon.png" data-video="n-gciIGOqE4" alt="Melon">
-        <img id="pine" class="fruit" src="images/pine.png" data-video="TYRt88u47Do" alt="Pine">
-        <img id="raspberry" class="fruit" src="images/raspberry.png" data-video="6dsfI6lHnSU" alt="Raspberry">
-        <img id="strawberry" class="fruit" src="images/strawberry.png" data-video="HmjLK6ejid8" alt="Strawberry">
+        <img id="grape" class="fruit" src="images/real/grape.png"
+             data-video-experiment1="OgP2D-uYY68" data-duration-experiment1="49000"
+             data-video-experiment2="OgP2D-uYY68" data-duration-experiment2="49000"
+             data-video-experiment3="OgP2D-uYY68" data-duration-experiment3="49000"
+             alt="Grape">
+        <img id="kiwi" class="fruit" src="images/real/kiwi.png" 
+             data-video-experiment1="Fy1M3untphg" data-duration-experiment1="48000"
+             data-video-experiment2="Fy1M3untphg" data-duration-experiment2="48000"
+             data-video-experiment3="Fy1M3untphg" data-duration-experiment3="48000"
+             alt="Kiwi">
+        <img id="melon" class="fruit" src="images/real/melon.png" 
+             data-video-experiment1="n-gciIGOqE4" data-duration-experiment1="49000"
+             data-video-experiment2="n-gciIGOqE4" data-duration-experiment2="49000"
+             data-video-experiment3="n-gciIGOqE4" data-duration-experiment3="49000"
+             alt="Melon">
+        <img id="pine" class="fruit" src="images/real/pine.png" 
+             data-video-experiment1="TYRt88u47Do" data-duration-experiment1="49000"
+             data-video-experiment2="TYRt88u47Do" data-duration-experiment2="49000"
+             data-video-experiment3="TYRt88u47Do" data-duration-experiment3="49000"
+             alt="Pine">
+        <img id="raspberry" class="fruit" src="images/real/raspberry.png" 
+             data-video-experiment1="6dsfI6lHnSU" data-duration-experiment1="48000"
+             data-video-experiment2="6dsfI6lHnSU" data-duration-experiment2="48000"
+             data-video-experiment3="6dsfI6lHnSU" data-duration-experiment3="48000"
+             alt="Raspberry">
+        <img id="strawberry" class="fruit" src="images/real/strawberry.png" 
+             data-video-experiment1="HmjLK6ejid8" data-duration-experiment1="48000"
+             data-video-experiment2="HmjLK6ejid8" data-duration-experiment2="48000"
+             data-video-experiment3="HmjLK6ejid8" data-duration-experiment3="48000"
+             alt="Strawberry">
     </div>
+
+    <!-- 🛠 Experiment 切り替えボタン -->
+    <div id="experiment-buttons">
+        <button class="experiment-btn" data-experiment="experiment1">Experiment 1</button>
+        <button class="experiment-btn" data-experiment="experiment2">Experiment 2</button>
+        <button class="experiment-btn" data-experiment="experiment3">Experiment 3</button>
+    </div>
+
 </body>
 </html>
