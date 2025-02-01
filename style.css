@@ -1,5 +1,3 @@
-
-
 /* 🍏 全体のレイアウト調整 */
 body {
     background-color: black;
@@ -75,14 +73,14 @@ body {
 #pine {
     left: 50%;
     bottom: 5%;
-    width: 6vw;
+    width: 7vw;
     height: auto;
 }
 
 #raspberry {
-    left: 53.5%;
-    bottom: 9%;
-    width: 6vw;
+    left: 53%;
+    bottom: 9.5%;
+    width: 7vw;
     height: auto;
 }
 
@@ -128,36 +126,62 @@ button {
 
 
 
+/* 🏆 Experiment ボタンのコンテナ（横並びにする） */
 #experiment-buttons {
     position: fixed;
-    bottom: 30px;  /* 画面下からの距離 */
-    right: 140px;   /* 画面右からの距離 */
+    right: 14vw;
+    bottom: 8vh;
+    transform: translateX(50%); /* 中央に配置 */
     display: flex;
-    flex-direction: column; /* 縦並び */
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* 📢 説明テキスト（ボタンの上に配置） */
+#experiment-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+/* 🎯 Experiment ボタン（横並び） */
+#experiment-button-container {
+    display: flex;
+    gap: 15px; /* ボタンの間隔 */
+}
+
+/* 🎯 Experiment ボタンのデザイン（円形） */
 .experiment-btn {
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #ff7eb3, #ff758c);
     border: none;
     color: white;
-    padding: 12px 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 25px;
+    text-align: center;
+    border-radius: 50%; /* 円形 */
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* 🟡 ホバー時のデザイン */
 .experiment-btn:hover {
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
     transform: scale(1.1);
 }
 
-.experiment-btn:focus {
-    outline: none;
+/* 🟢 ボタンが選択されたときの強調 */
+.experiment-btn.selected {
+    background: linear-gradient(135deg, #ff5678, #ff3456);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 .fruit-wrapper {

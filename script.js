@@ -3,23 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const videoContainer = document.getElementById("video-container");
     const youtubeVideo = document.getElementById("youtube-video");
     const experimentButtons = document.querySelectorAll(".experiment-btn");
-    let selectedExperiment = "experiment1"; // 初期値
+    let selectedExperiment = null; // 初期状態は未選択
     let hideTimeout; // 動画非表示タイマー
 
-    // Experiment 切り替えボタンのイベント
+    // 🎯 Experiment 切り替えボタンのイベント
     experimentButtons.forEach(button => {
         button.addEventListener("click", function () {
             selectedExperiment = this.getAttribute("data-experiment");
 
-            // ボタンのスタイルを更新
-            experimentButtons.forEach(btn => btn.style.opacity = "0.6");
-            this.style.opacity = "1"; 
+            // ボタンのスタイルを更新（選択されたボタンを強調）
+            experimentButtons.forEach(btn => btn.classList.remove("selected"));
+            this.classList.add("selected");
         });
     });
 
-    // 🍓 フルーツ画像のクリックイベント
+    // 🍓 フルーツ画像のクリックイベント（ボタンが押されていないと無効）
     fruitImages.forEach(fruit => {
         fruit.addEventListener("click", function () {
+            if (!selectedExperiment) {
+                alert("Please select your experiment first!");
+                return;
+            }
+
             const videoId = this.getAttribute(`data-video-${selectedExperiment}`);
             const duration = parseInt(this.getAttribute(`data-duration-${selectedExperiment}`), 10) || 50000;
 
