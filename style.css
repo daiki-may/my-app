@@ -14,7 +14,7 @@ body {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 920px; /* Front画像を少し大きく */
+    width: 55vw; /* Front画像を少し大きく */
 }
 
 /* 🍽 Plate Image */
