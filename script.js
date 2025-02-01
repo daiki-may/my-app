@@ -1,33 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const fruitImages = document.querySelectorAll(".fruit");
-//     const videoContainer = document.getElementById("video-container");
-//     const youtubeVideo = document.getElementById("youtube-video");
-//     let hideTimeout;  // 動画を非表示にするタイマー
-
-//     fruitImages.forEach(fruit => {
-//         fruit.addEventListener("click", function () {
-//             const videoId = this.getAttribute("data-video");
-//             const duration = parseInt(this.getAttribute("data-duration"), 10) || 50000; // デフォルト50秒
-
-//             youtubeVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-
-//             // 動画を表示
-//             videoContainer.style.display = "block";
-
-//             // すでにセットされている非表示タイマーをクリア（連続クリック対策）
-//             if (hideTimeout) {
-//                 clearTimeout(hideTimeout);
-//             }
-
-//             // 指定時間後に動画を非表示
-//             hideTimeout = setTimeout(() => {
-//                 videoContainer.style.display = "none";
-//                 youtubeVideo.src = ""; // 動画をリセット
-//             }, duration);
-//         });
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     const fruitImages = document.querySelectorAll(".fruit");
     const videoContainer = document.getElementById("video-container");
@@ -80,4 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
