@@ -2,7 +2,7 @@
 body {
     background-color: black;
     text-align: center;
-    cursor: url('./images/fork.png') 0 0, auto;  /* フォークカーソル */
+    cursor: url('./images/fork.png') 0 100, auto;  /* フォークカーソル */
     overflow: hidden; /* スクロールバーを消す */
 }
 
