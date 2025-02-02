@@ -9,7 +9,7 @@ body {
 /* 🖼 Front Image */
 #front-image {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
     width: 55vw; /* Front画像を少し大きく */
